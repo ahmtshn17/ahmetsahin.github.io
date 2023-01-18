@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  html {
+    font-size: 73.8%;
+  }
+}
+
+/*  Extra large devices  */
+/* (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  html {
+    font-size: 83.8%;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ___________________________________________________________________________________ */
+.container {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+    margin: 0 auto;
+  }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+    margin: 0 auto;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+/*  Extra large devices  */
+/* (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1340px;
+    margin: 0 auto;
+  }
+}
+
+/* ___________________________________________________________________________________ */
+
+.row {
+  margin-bottom: 2rem;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col-2 {
+  width: 50%;
+  float: left;
+}
+
+.col-3 {
+  width: 33.33%;
+  float: left;
+}
+
+.col-4 {
+  width: 25%;
+  float: left;
+}
+
+.col-5 {
+  width: 20%;
+  float: left;
+}
+
+.col-6 {
+  width: 16.66%;
+  float: left;
+}
+
+@media (max-width: 576px) {
+  .row {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .row {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .row {
+    margin-bottom: 3.5rem;
+  }
+}
+
+/*  Extra large devices  */
+/* (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .row {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .row {
+    margin-bottom: rem;
+  }
+}

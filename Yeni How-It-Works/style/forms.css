@@ -1,0 +1,63 @@
+main {
+  padding-top: 40px;
+}
+
+.sign-up-tittle {
+  text-align: center;
+  color: #284c6c;
+  font-size: 30px;
+  margin-top: 51px;
+}
+
+main form {
+  width: 500px;
+  margin: 0px auto;
+}
+
+form input,
+form select {
+  padding: 10px;
+  border: 1px solid rgb(194, 187, 187);
+}
+
+form input:focus,
+form select:focus {
+  border: 2px solid #5898d1;
+  outline: none;
+  background-color: rgb(231, 231, 231);
+}
+
+form input[type="checkbox"] {
+  appearance: none;
+  border-radius: 50%;
+}
+
+form input[type="checkbox"]:hover {
+  background-color: gray;
+}
+
+form input[type="checkbox"]:checked {
+  background-color: #ff987e;
+}
+
+form label:not([for="agre-to"]),
+form input:not([type="checkbox"]),
+form select {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+}
+
+[for="agre-to"] {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+[type="checkbox"] {
+  margin-top: 10px;
+}
+
+#button-form {
+  display: block;
+  margin-top: 10px;
+}
