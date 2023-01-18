@@ -1,0 +1,450 @@
+/* icons */
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css);
+
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+/* Style */
+
+@import url(buttons.css);
+@import url(ornek-style.css);
+
+body {
+  font-family: Lato, Roboto, serif;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+li {
+  font-size: 1.1rem;
+}
+
+/*Navbar Style Start*/
+header {
+  background-color: #ff987e;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+}
+
+.logo__text {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.nav__items {
+  display: inline-block;
+  width: calc(100% - 125px);
+  text-align: right;
+  margin: 0;
+}
+
+.nav__items__item {
+  list-style-type: none;
+  padding: 0.4rem 0.3rem;
+  display: inline-block;
+}
+
+.nav__link {
+  font-size: 1.1rem;
+  color: #fff;
+  display: inline-block;
+  padding: 0.3rem 0.4rem;
+}
+
+.nav__link:hover {
+  color: #284c6c;
+}
+
+.nav__link:active {
+  color: #fff;
+}
+
+.nav__link::before {
+  content: "\2022";
+  color: #fff;
+  padding: 3px;
+}
+
+#login a::before {
+  content: "";
+}
+
+.nav__link:hover::before {
+  color: #284c6c;
+}
+
+.nav__link:active::before {
+  color: #fff;
+}
+
+.nav__items__item::before:active {
+  color: #fff;
+}
+
+#login a {
+  padding: 0.4rem 0.8rem;
+}
+
+#login a:active {
+  color: #284c6c;
+}
+
+/*Navbar Style Finish*/
+/* ------------------------------------------------------------------------ */
+/* Slider Style Start */
+
+#slider {
+  position: relative;
+  margin-top: 3.2rem;
+}
+
+.bg-image {
+  height: 40vh;
+  background-position: center;
+  background-image: linear-gradient(
+      to top right,
+      rgba(255, 194, 179, 0.2),
+      rgba(255, 112, 77, 0.2)
+    ),
+    url(../img/bg.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-text {
+  width: 55vw;
+  position: absolute;
+  font-size: 1.6rem;
+  top: 60%;
+  left: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  background: rgba(40, 76, 108, 0.3);
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  .bg-image {
+    height: 50vh;
+  }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .bg-image {
+    height: 60vh;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .bg-image {
+    height: 70vh;
+  }
+}
+
+/*  Extra large devices  */
+/* (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .bg-image {
+    height: 80vh;
+  }
+}
+
+@media (min-width: 1400px) {
+}
+*/
+
+/* Slider Style Finish */
+
+/* ------------------------------------------------------------------------ */
+
+/* How It Works Content Style Start */
+
+
+/* ????????????????????????? */
+.first-div {
+  height: 600px;
+  padding: 15px 0px 0px 0px;
+}
+
+.first-div p {
+  text-align: center;
+}
+
+#first-content .col-3 {
+  text-align: center;
+}
+
+#first-content .col-3 i {
+  color: #ff987e;
+}
+
+/* How It Works Content Style Finish */
+
+/* ------------------------------------------------------------------------ */
+
+/* Features Style Start */
+
+#features .col-2 {
+  height: 350px;
+}
+
+.feature-img {
+  background-image: linear-gradient(
+      to bottom left,
+      rgba(252, 178, 156, 0.2),
+      rgba(248, 83, 32, 0.2)
+    ),
+    url(../img/features.jpeg);
+  background-size: cover;
+}
+
+.feature-content {
+  background-color: #ecf5f7;
+}
+
+.feature-cartoon {
+  padding: 40px 40px;
+}
+
+/* Features Style Finish */
+
+/* ------------------------------------------------------------------------ */
+
+/* Plans Style Start */
+
+.content-tittle-first {
+  text-align: center;
+}
+
+#plans .col-3 {
+  padding: 0 5px;
+  text-align: center;
+}
+
+#plans .col-3 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.inclusive {
+  background-color: #ecf5f7;
+  border-radius: 5px;
+  box-shadow: -10px 10px 25px 3px rgba(100, 100, 111, 0.3);
+  transition: box-shadow 0.6s;
+  padding: 35px 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .inclusive {
+    margin-top: 0px;
+  }
+
+  #plans .col-3 {
+    margin-bottom: 1rem;
+  }
+}
+
+.inclusive:hover {
+  box-shadow: -10px 10px 25px 3px rgba(100, 100, 111, 0.5);
+}
+
+.featured {
+  background-color: #396eb0 !important;
+  color: #fff;
+  margin: 0;
+}
+
+.featured-tittle {
+  background-color: #fff;
+  color: #ff987e;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.plan-item {
+  margin-bottom: 5px;
+}
+
+/* Plans Style Finish */
+
+/* ------------------------------------------------------------------------ */
+
+/* Counter Style Start */
+
+#counter {
+  background: linear-gradient(
+    to bottom left,
+    rgba(252, 178, 156),
+    rgba(248, 83, 32)
+  );
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+#counter .row {
+  padding: 40px 50px;
+}
+
+#counter .col-3 {
+  padding: 10px 5px;
+}
+
+#counter .col-3 h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+#counter .col-3 h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.inner-div {
+  text-align: center;
+}
+
+/* Counter Style Finish */
+
+/* ------------------------------------------------------------------------ */
+
+/* Back To Top Style Start */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fa-chevron-circle-up {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  scroll-behavior: smooth;
+  color: #4c6c8f;
+  transition: all 0.5s;
+}
+
+.fa-chevron-circle-up:hover {
+  color: #1b344e;
+}
+
+/* Back To Top Style Finish */
+
+/* ------------------------------------------------------------------------ */
+
+/* Movie Card Style Start */
+
+#movie-card .col-3 {
+  padding: 20px 10px;
+  transition: padding 0.6s;
+}
+
+#movie-card .col-3:hover {
+  padding: 10px 10px;
+}
+
+.movie-card-inner {
+  background-color: #fff;
+  box-shadow: -10px 10px 25px 3px rgba(100, 100, 111, 0.3);
+  transition: box-shadow 0.6s;
+}
+
+.movie-card-inner:hover {
+  box-shadow: -10px 10px 25px 3px rgba(100, 100, 111, 0.5);
+}
+
+#movie-card img {
+  max-height: 350px;
+  width: 100%;
+}
+
+.movie-content {
+  padding: 30px;
+}
+
+/* Movie Card Style Finish */
+
+/* ------------------------------------------------------------------------ */
+
+/* Footer Style Start */
+
+footer {
+  background-color: #284c6c;
+  color: #fff;
+  padding: 30px;
+  position: relative;
+  top: 80px;
+}
+
+footer .row {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+footer .col-2 li {
+  display: inline-block;
+}
+
+.footer-links,
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-links a {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+.socials {
+  text-align: right;
+}
+
+.footer-icon {
+  display: inline-block;
+  padding: 8px 10px;
+  margin-left: 5px;
+  border-radius: 50px;
+  font-size: 25px;
+  color: #fff;
+  transition: all 1s;
+}
+
+.footer-icon a {
+  color: #fff;
+}
+
+.footer-icon:hover {
+  opacity: 0.6;
+}
+
+.facebook {
+  background-color: #0078ef;
+}
+
+.twitter {
+  background-color: #0097e6;
+}
+
+.instagram {
+  background-color: #c7327a;
+}
+
+/* Footer Style Finish */
+
+/* ----------------------------------------------------------------------------------------------------------------------------------*/
